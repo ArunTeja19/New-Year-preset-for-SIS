@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You are special!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="floating-hearts-container"></div>
+    <div id="click-effects-container"></div>
+    <div class="background"></div>
+
+    <div class="container">
+        
+        <div id="screen-0" class="screen active">
+            <div class="intro-content">
+                <div class="avatar-circle">
+                    <img src="waving.gif" alt="waving" class="waving-gif">
+                </div>
+                <h1 class="title">Hey Teddy</h1>
+                <p class="subtitle">Happy New Year🫶</p>
+                <button class="btn" onclick="nextScreen(1)">
+                    Here's your Surprise 
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="screen-1" class="screen">
+            <div class="heart-icon-wrapper pulse-soft">
+                <svg width="56" height="56" viewBox="0 0 24 24" fill="#f472b6" stroke="#f472b6"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h2 class="section-title">Just for you</h2>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: 20px; font-size: 0.9rem;">(Tap the hearts to see)</p>
+            
+            <div class="compliment-list">
+                <div class="reveal-card" onclick="revealMessage(this)">
+                    <div class="card-text">Nuvvu oka Pandhi vi</div>
+                    <div class="card-cover"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                </div>
+                <div class="reveal-card" onclick="revealMessage(this)">
+                    <div class="card-text">Kadhu kadhu Pandhi pillavi</div>
+                    <div class="card-cover"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                </div>
+                <div class="reveal-card" onclick="revealMessage(this)">
+                    <div class="card-text">Acho kompathisi feel ayyyava enti ???</div>
+                    <div class="card-cover"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                </div>
+                <div class="reveal-card" onclick="revealMessage(this)">
+                    <div class="card-text">Nuv endhuk feel aithav le, avi kadha avvalsindhi...</div>
+                    <div class="card-cover"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                </div>
+                <div class="reveal-card" onclick="revealMessage(this)">
+                    <div class="card-text">Hehehe uttine jokuuuu...</div>
+                    <div class="card-cover"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                </div>
+            </div>
+
+            <button class="btn" onclick="nextScreen(2)">
+                See more
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+            </button>
+        </div>
+
+        <div id="screen-2" class="screen">
+            <h2 class="section-title">A little note for you</h2>
+            
+            <div class="card-3d-container" onclick="flipCard(event)">
+                <div class="card-3d-inner">
+                    <div class="card-front gift-card-wrapper">
+                        <div class="gift-card-header">
+                            <svg class="gift-heart-corner" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                            <svg class="gift-heart-corner" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        </div>
+                        <div class="gift-card-body">
+                            <div class="ribbon-heart-container pulse-soft">
+                                <svg class="main-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                                <div class="ribbon-tails">
+                                    <svg class="ribbon-tail left" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-1.26 3.88-3.1 4.94z"/></svg>
+                                    <svg class="ribbon-tail right" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-1.26 3.88-3.1 4.94z"/></svg>
+                                </div>
+                            </div>
+                            <p class="gift-text">Tap to open</p>
+                        </div>
+                    </div>
+
+                    <div class="card-back message-card-wrapper">
+                        <svg class="message-heart" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                        
+                        <div class="message-content">
+                            <p id="typewriter-text"></p>
+                            <span class="cursor">|</span>
+                        </div>
+
+                        <button class="btn hidden" id="msg-btn" onclick="nextScreen(3)">
+                            One more thing
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="screen-3" class="screen">
+            <div class="final-circle pulse-soft">
+                <img src="cute.gif" alt="cute" class="cute-gif">
+            </div>
+            <h2 class="final-text">You’ll always be special to me!!! <br><br>Finally wishing a brightest new year to the brightest star of my sky❣️</h2>
+        </div>
+
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="premalu bgm.mpeg" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
